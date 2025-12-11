@@ -35,7 +35,7 @@ func main() {
 
 	p := new(http.Protocols)
 	p.SetHTTP1(true)
-	p.SetUnencryptedHTTP2(false)
+	p.SetUnencryptedHTTP2(true)
 
 	s := http.Server{
 		Addr:      "localhost:8080",
